@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pi</title>
+</head>
+<body>
+    <section class="page">
+        <h1>Pi</h1>
+        <section class="preface">
+            <p>Here you can see everything about pi!</p>
+            <p>Pi is around 3.14<a href="pi.html">1592653589793...</a></p>
+            <p>This is pi symbol from the greek alphabet: π.</p>
+        </section>
+        <h1>Simple calculations</h1>
+        <section class="calculations">
+            <p>
+                Round to <input type="number" placeholder="Limit: 15 decimals." id="decimals"> decimals.
+            </p>
+            <p>
+                π * <input type="number" id="timesInput"> = <span id="timesOutput">0</span>
+            </p>
+            <p>
+                π / <input type="number" id="divideInput"> = <span id="divideOutput">0</span>
+            </p>
+            <p>
+                <input type="number" id="invertedDivideInput"> / π = <span id="invertedDivideOutput">0</span>
+            </p>
+        </section>
+
+        <h1>Visual formulas</h1>
+        <section class="visual">
+            <h2>Diameter to/from radius</h2>
+            <p>
+                getDiameterByRadius: <input type="number" placeholder="Enter radius." id="getDiameterByRadiusInput"> * 2 = <span>diameter</span>
+            </p>
+            <p>
+                getRadiusByDiameter: <input type="number" placeholder="Enter diameter." id=""> / 2 = <span>radius</span>
+            </p>
+            <h2>Circumference</h2>
+            <p>
+                getCircumferenceByDiameter: π * <input type="number" placeholder="Enter diameter." id=""> = <span>circumference</span>
+            </p>
+            <p>
+                getCircumferenceByRadius: π * <input type="number" placeholder="Enter radius." id=""> * 2 = <span>circumference</span>
+            </p>
+            <p>
+                getDiameterByCircumference: <input type="number" placeholder="Enter circumference." id=""> / π = <span>diameter</span>
+            </p>
+            <p>
+                getRadiusByCircumference: <input type="number" placeholder="Enter circumference." id=""> / π / 2 = <span>radius</span>
+            </p>
+            <h2>Area</h2>
+            <p>
+                getAreaByDiameter: π * (<input type="number" placeholder="Enter diameter." id=""> * 2)² = <span>area</span>
+            </p>
+            <p>
+                getAreaByRadius: π * (<input type="number" placeholder="Enter radius." id="">)² = <span>area</span>
+            </p>
+            <p>
+                getDiameterByArea: π * (<input type="number" placeholder="Enter diameter." id="">???)² = <span>diameter</span>
+            </p>
+            <p>
+                getRadiusByArea: π * (<input type="number" placeholder="Enter diameter." id="">???)² = <span>radius</span>
+            </p>
+        </section>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>

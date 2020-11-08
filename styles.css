@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Alata, sans-serif;
+}
+
+.pi {
+    word-wrap: break-word;
+}
+
+.piLink {
+    text-align: center;
+}
+
+.page {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+#timesInput, #divideInput, #invertedDivideInput {
+    width: 50px;
+}
+
+#decimals {
+    width: 125px;
+}
